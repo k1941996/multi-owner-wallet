@@ -1,0 +1,86 @@
+.dash-table {
+  width: 100%;
+}
+.dash-table tr {
+  cursor: pointer;
+  font-size: 14px;
+}
+.dash-table tr:hover {
+  background-color: #e9ecef5e;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06);
+}
+.dash-table tr td {
+  padding: 0.5rem 0.5rem;
+}
+.view-all {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+.view-all:hover {
+  text-decoration: underline;
+}
+.profile {
+  width: 70px;
+  height: 70px;
+  margin: 40px auto;
+  margin-bottom: 10px;
+  border: 2px #ccc solid;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile img {
+  width: 100%;
+}
+#wallet-card {
+  padding: 25px;
+}
+#wallet-card p {
+  font-size: 13px;
+}
+.footer-num p {
+  margin-bottom: 0px;
+}
+.footer-num h5 {
+  font-size: 24px;
+  color: #04ab77;
+  line-height: 20px;
+}
+
+.dotted-wrapper {
+  position: relative;
+  display: inline-block;
+  /* background: url(https://cryptodash.netlify.app/data/crypto-dash/dotted-bg.jpg) no-repeat; */
+  background-size: cover;
+  padding: 60px 40px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.gradient-orange {
+  background-image: linear-gradient(
+    to right bottom,
+    #1fdb84,
+    #198754
+  ) !important;
+  color: #fff !important;
+  padding: 10px 20px !important;
+  border-radius: 10px !important;
+  border: 0px !important;
+  width: 100%;
+  font-size: 22px !important;
+  box-shadow: 0 2px 28px rgb(0 0 0 / 10%);
+}
+
+.metamask-ui {
+  width: 120px;
+  height: 120px;
+  border: 6px #cccccc78 solid;
+  border-radius: 50%;
+  margin: 0px auto;
+  line-height: 100px;
+  background: #cccccc38;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 28px rgb(0 0 0 / 10%);
+}

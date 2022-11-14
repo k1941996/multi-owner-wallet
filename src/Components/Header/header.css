@@ -1,0 +1,83 @@
+.nav-light {
+  background-color: white !important;
+  box-shadow: rgb(40 54 61 / 18%) 0px 2px 4px 0px;
+}
+.logo {
+  width: 130px;
+}
+
+.btn-connect {
+  padding: 3px 3px !important;
+  border-radius: 15px !important;
+  display: flex !important;
+  align-items: center;
+  font-size: 15px !important;
+  padding-right: 20px !important;
+}
+.btn-connect span {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 30%;
+  margin-right: 10px;
+  line-height: 30px;
+  display: block;
+}
+.btn-connect span img {
+  width: 20px;
+}
+.select-token {
+  width: 160px;
+  text-align: right;
+}
+
+#wallet-popup .modal-title {
+  font-size: 20px !important;
+}
+#wallet-popup .modal-title span {
+  background-color: #19875494;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.wallet-connect-ui {
+  text-align: left;
+  margin: 50px auto;
+}
+.wallet-connect-ui .btn-light {
+  padding: 10px 20px 10px 20px;
+  width: 100% !important;
+  text-align: left;
+  display: block;
+  border-radius: 50px;
+}
+.wallet-connect-ui .btn-light img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.wallet-connect-ui .btn-light:hover {
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
+  background-color: #19875494;
+  color: #fff;
+}
+
+.select-token .dropdown-menu {
+  width: 100%;
+  height: 60vh;
+  overflow: auto;
+  border: 0px;
+  box-shadow: 0px 5px 3px 3px rgb(214 214 214 / 19%) !important;
+}
+.select-token .dropdown-item{padding: 10px 10px; border-bottom: 1px #ccc dashed;}
+
+.select-token .dropdown-menu a button {
+  padding: 3px 10px !important;
+  font-size: 12px;
+}
