@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react';
 // import { Link } from "react-router-dom";
 
-import Header from "Components/Header";
-import Footer from "Components/Footer";
-import Sidebar from "Components/Sidebar";
-import { Card, Col, Row, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import Header from 'Components/Header';
+import Footer from 'Components/Footer';
+import Sidebar from 'Components/Sidebar';
+import { Card, Col, Row, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
+  const connectToMetaMask = () => {};
+
   return (
     <div>
       <Header />
@@ -20,18 +22,14 @@ const Home = () => {
                 <Col lg={12}>
                   <div className="metamask-ui">
                     <span>
-                      <img
-                        className=""
-                        alt=""
-                        src={`${process.env.PUBLIC_URL}/metamask.png`}
-                      ></img>
+                      <img className="" alt="" src={`${process.env.PUBLIC_URL}/metamask.png`}></img>
                     </span>
                   </div>
                   <p>Connect a Wallet</p>
-                  <Link to="/Home">
+                  <Link onClick={connectToMetaMask}>
                     <Button variant="light" className="gradient-orange">
                       <i className="bi bi-activity"></i> Connect
-                    </Button>{" "}
+                    </Button>{' '}
                   </Link>
                 </Col>
               </Row>
