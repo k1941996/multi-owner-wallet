@@ -71,6 +71,22 @@ code {
 }
 
 @media (max-width: 992px) {
-  .content{  width: calc(100% - 0px);}
- 
+  .content{  width: calc(100% - 0px); padding-top: 100px;}
+  /* #navbarScrollingDropdown .navbar-nav .dropdown-menu{position: absolute !important;} */
+  .select-token .dropdown-menu{height: auto !important; position:absolute; }
+  .select-token{width: auto !important;}
+  .card{margin-bottom: 10px;}
+  .navbar-toggler{z-index: 99999;
+    position: fixed;
+    left: 106px;
+    top: 32px;}
+    #side-menu {
+    
+    
+      padding-top: 100px;
+      
+      max-height: 100%;
+      z-index: 9;
+      box-shadow: 2px 2px 3px #0000001a;
+    }
 }

@@ -3,6 +3,7 @@ import ErrorPage from "Pages/Error404";
 import Home from "Pages/Home";
 import Connect from "Pages/Connect";
 import Assets from "Pages/Assets";
+import Address from "Pages/Address";
 import Transactions from "Pages/Transactions";
 
 
@@ -18,6 +19,7 @@ const NavigationRouter = () => {
           <Route path="/error" element={<ErrorPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/assets" element={<Assets />} />
+          <Route path="/address" element={<Address />} />
           <Route path="/transactions" element={<Transactions />} />
         </Route>
       </Routes>
