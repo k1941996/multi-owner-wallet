@@ -4,11 +4,11 @@ import "./header.css";
 import {
   Row,
   Col,
-  Card,
+  // Card,
   Button,
   Container,
   NavDropdown,
-  Badge,
+  // Badge,
 } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import Nav from "react-bootstrap/Nav";
@@ -19,6 +19,7 @@ const Header = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <>
       <Modal
@@ -31,7 +32,7 @@ const Header = () => {
         <Modal.Header closeButton>
           <Modal.Title>
             <span>
-              <i class="bi bi-wallet2"></i>
+              <i className="bi bi-wallet2"></i>
             </span>{" "}
             Select a Wallet
           </Modal.Title>
@@ -45,7 +46,7 @@ const Header = () => {
               <Button variant="light">
                 {" "}
                 <span>
-                  <img src={`${process.env.PUBLIC_URL}/metamask.png`} />
+                  <img src={`${process.env.PUBLIC_URL}/metamask.png`} alt="" />
                 </span>{" "}
                 MetaMask
               </Button>
@@ -54,7 +55,7 @@ const Header = () => {
               <Button variant="light">
                 {" "}
                 <span>
-                  <img src={`${process.env.PUBLIC_URL}/logo192.png`} />
+                  <img src={`${process.env.PUBLIC_URL}/logo192.png`} alt="" />
                 </span>{" "}
                 WalletConnect
               </Button>
@@ -66,7 +67,11 @@ const Header = () => {
         <Container fluid>
           <Navbar.Brand href="#">
             {" "}
-            <img className="logo" src={`${process.env.PUBLIC_URL}/logo.gif`} />
+            <img
+              className="logo"
+              src={`${process.env.PUBLIC_URL}/logo.gif`}
+              alt=""
+            />
           </Navbar.Brand>
 
           <Nav className="justify-content-end" activeKey="/home">
@@ -77,59 +82,55 @@ const Header = () => {
                 className="btn-connect"
               >
                 <span>
-                  <img src={`${process.env.PUBLIC_URL}/metamask.png`} />
+                  <img src={`${process.env.PUBLIC_URL}/metamask.png`} alt="" />
                 </span>
                 Connect a Wallet
               </Button>{" "}
             </Nav.Item>
             <Nav.Item className="select-token">
               <NavDropdown title="Select User" id="navbarScrollingDropdown">
-              
                 <NavDropdown.Item href="#action3">
                   {" "}
                   <Button variant="info" size="sm">
                     Ethereum
                   </Button>
                 </NavDropdown.Item>
-                
+
                 <NavDropdown.Item href="#action4">
                   <Button variant="secondary" size="sm">
                     Gnosis Chain
                   </Button>
                 </NavDropdown.Item>
-                
 
                 <NavDropdown.Item href="#action4">
                   <Button variant="danger" size="sm">
                     Polygon
                   </Button>{" "}
                 </NavDropdown.Item>
-                
+
                 <NavDropdown.Item href="#action4">
                   <Button variant="warning" size="sm">
                     BNB Smart Chain
                   </Button>{" "}
                 </NavDropdown.Item>
-                
+
                 <NavDropdown.Item href="#action4">
                   <Button variant="primary" size="sm">
                     Arbitrum
                   </Button>{" "}
                 </NavDropdown.Item>
 
-                
                 <NavDropdown.Item href="#action4">
                   <Button variant="success" size="sm">
                     Aurora
                   </Button>{" "}
                 </NavDropdown.Item>
-               
+
                 <NavDropdown.Item href="#action4">
                   <Button variant="dark" size="sm">
                     Optimism
                   </Button>{" "}
                 </NavDropdown.Item>
-               
               </NavDropdown>
             </Nav.Item>
           </Nav>

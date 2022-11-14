@@ -44,18 +44,19 @@ const Transactions = () => {
                           <tbody id="assets-ui">
                             <tr>
                               <td>
-                                <i class="bi bi-arrow-up-right text-danger"></i>{" "}
+                                <i className="bi bi-arrow-up-right text-danger"></i>{" "}
                                 Sent
                               </td>
                               <td>
-                                <i class="bi bi-currency-bitcoin"></i> -0.00777
-                                GOR
+                                <i className="bi bi-currency-bitcoin"></i>{" "}
+                                -0.00777 GOR
                               </td>
                               <td>6:54 PM</td>
                               <td className="text-end">
                                 {" "}
                                 <Button variant="danger" size="sm">
-                                  <i class="bi bi-arrow-up-right"></i> Pending
+                                  <i className="bi bi-arrow-up-right"></i>{" "}
+                                  Pending
                                 </Button>
                               </td>
                             </tr>
@@ -72,6 +73,7 @@ const Transactions = () => {
                                     <div className="media">
                                       <span>
                                         <img
+                                          alt=""
                                           className=" "
                                           src={`${process.env.PUBLIC_URL}/metamask.png`}
                                         ></img>
@@ -90,11 +92,11 @@ const Transactions = () => {
                                           0x305D5012ad36068a5013C6f7f90bBe06011018e9
                                         </p>
                                         <div className="icons">
-                                          <a>
+                                          <a href="/sad">
                                             <i className="bi bi-stickies"></i>
                                           </a>
-                                          <a>
-                                            <i class="bi bi-box-arrow-in-up-right"></i>
+                                          <a href="/sad">
+                                            <i className="bi bi-box-arrow-in-up-right"></i>
                                           </a>
                                         </div>
                                       </div>
@@ -108,26 +110,34 @@ const Transactions = () => {
                                     <tbody>
                                       <tr>
                                         <td>Transaction hash:</td>
-                                        <td>0x083e563f...d4565659 
-                                           <div className="icons" style={{display:'contents'}}>
-                                          <a>
-                                            <i className="bi bi-stickies"></i>
-                                          </a>
-                                          <a>
-                                            <i class="bi bi-box-arrow-in-up-right"></i>
-                                          </a>
-                                        </div></td>
+                                        <td>
+                                          0x083e563f...d4565659
+                                          <div
+                                            className="icons"
+                                            style={{ display: "contents" }}
+                                          >
+                                            <a href="/asd">
+                                              <i className="bi bi-stickies"></i>
+                                            </a>
+                                            <a href="/asd">
+                                              <i className="bi bi-box-arrow-in-up-right"></i>
+                                            </a>
+                                          </div>
+                                        </td>
                                       </tr>
 
                                       <tr>
                                         <td>SafeTxHash:</td>
-                                        <td>0x62b89ab4...9cefc3f6 
-                                        <div className="icons" style={{display:'contents'}}>
-                                          <a>
-                                            <i className="bi bi-stickies"></i>
-                                          </a>
-                                         
-                                        </div>
+                                        <td>
+                                          0x62b89ab4...9cefc3f6
+                                          <div
+                                            className="icons"
+                                            style={{ display: "contents" }}
+                                          >
+                                            <a href="/asd">
+                                              <i className="bi bi-stickies"></i>
+                                            </a>
+                                          </div>
                                         </td>
                                       </tr>
                                       <tr>

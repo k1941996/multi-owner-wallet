@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import "./dashboard.css";
 import Header from "Components/Header";
-import Footer from "Components/Footer";
+// import Footer from "Components/Footer";
 import Sidebar from "Components/Sidebar";
 import { Card, Col, Row, Table, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -14,7 +14,6 @@ const Home = () => {
 
       <Sidebar />
       <div className="content">
- 
         <Row>
           <Col lg="5">
             <Card id="wallet-card">
@@ -23,19 +22,23 @@ const Home = () => {
                   <span>
                     <img
                       className=" "
+                      alt=""
                       src={`${process.env.PUBLIC_URL}/metamask.png`}
                     ></img>
                   </span>
 
                   <div className="media-body">
                     <h4 className="mt-0 mb-0">12.09 USD</h4>
-                    <p className="text-truncate"> 0x305D5012ad36068a5013C6f7f90bBe06011018e9</p>
+                    <p className="text-truncate">
+                      {" "}
+                      0x305D5012ad36068a5013C6f7f90bBe06011018e9
+                    </p>
                     <div className="icons">
-                      <a>
+                      <a href="/asd">
                         <i className="bi bi-stickies"></i>
                       </a>
-                      <a>
-                        <i class="bi bi-box-arrow-in-up-right"></i>
+                      <a href="/asd">
+                        <i className="bi bi-box-arrow-in-up-right"></i>
                       </a>
                     </div>
                   </div>
@@ -56,13 +59,14 @@ const Home = () => {
                   <h5>0235677</h5>
                 </Col>
                 <Col lg={4} className="text-end">
-               <Link to="/assets"> <Button size="sm" variant="dark" className="mt-2">
+                  <Link to="/assets">
+                    {" "}
+                    <Button size="sm" variant="dark" className="mt-2">
                       View Assets
-                  </Button>
+                    </Button>
                   </Link>
                 </Col>
               </Row>
-            
             </Card>
           </Col>
           <Col lg="7">
@@ -84,81 +88,80 @@ const Home = () => {
               </Row>
               <Table className="mt-1 dash-table">
                 {/* <thead>
-        <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
-        </tr>
-      </thead> */}
-                <tbody >
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead> */}
+                <tbody>
                   <tr>
                     <td>1</td>
                     <td>
-                      <i class="bi bi-arrow-up-right text-danger"></i> Sent
+                      <i className="bi bi-arrow-up-right text-danger"></i> Sent
                     </td>
                     <td>
-                      <i class="bi bi-currency-bitcoin"></i> -0.00777 GOR
+                      <i className="bi bi-currency-bitcoin"></i> -0.00777 GOR
                     </td>
                     <td>6:54 PM</td>
                     <td className="text-end">
-                      <span class="text-success">Success</span>
+                      <span className="text-success">Success</span>
                     </td>
                   </tr>
 
                   <tr>
                     <td>2</td>
                     <td>
-                      <i class="bi bi-arrow-down-left text-success"></i> Recived
+                      <i className="bi bi-arrow-down-left text-success"></i> Recived
                     </td>
                     <td>
-                      <i class="bi bi-currency-bitcoin"></i> -0.00777 GOR
+                      <i className="bi bi-currency-bitcoin"></i> -0.00777 GOR
                     </td>
                     <td>6:54 PM</td>
                     <td className="text-end">
-                      <span class="text-danger">Pending</span>
+                      <span className="text-danger">Pending</span>
                     </td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>
-                      <i class="bi bi-arrow-down-left text-success"></i> Recived
+                      <i className="bi bi-arrow-down-left text-success"></i> Recived
                     </td>
                     <td>
-                      <i class="bi bi-currency-bitcoin"></i> -0.00777 GOR
+                      <i className="bi bi-currency-bitcoin"></i> -0.00777 GOR
                     </td>
                     <td>6:54 PM</td>
                     <td className="text-end">
-                      <span class="text-danger">Pending</span>
+                      <span className="text-danger">Pending</span>
                     </td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td>
-                      <i class="bi bi-arrow-down-left text-success"></i> Sent
+                      <i className="bi bi-arrow-down-left text-success"></i> Sent
                     </td>
                     <td>
-                      <i class="bi bi-currency-bitcoin"></i> -0.00777 GOR
+                      <i className="bi bi-currency-bitcoin"></i> -0.00777 GOR
                     </td>
                     <td>6:54 PM</td>
                     <td className="text-end">
-                      <span class="text-success">Success</span>
+                      <span className="text-success">Success</span>
                     </td>
                   </tr>
                   <tr>
                     <td>5</td>
                     <td>
-                      <i class="bi bi-arrow-up-right text-danger"></i> Sent
+                      <i className="bi bi-arrow-up-right text-danger"></i> Sent
                     </td>
                     <td>
-                      <i class="bi bi-currency-bitcoin"></i> -0.00777 GOR
+                      <i className="bi bi-currency-bitcoin"></i> -0.00777 GOR
                     </td>
                     <td>6:54 PM</td>
                     <td className="text-end">
-                      <span class="text-danger">Pending</span>
+                      <span className="text-danger">Pending</span>
                     </td>
                   </tr>
-                  
                 </tbody>
               </Table>
             </Card>
@@ -166,7 +169,6 @@ const Home = () => {
         </Row>
       </div>
       {/* <Link to="/error">Navigate to Error Page</Link> */}
-   
     </div>
   );
 };

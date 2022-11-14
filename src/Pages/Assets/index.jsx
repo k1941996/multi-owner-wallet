@@ -5,7 +5,7 @@ import Header from "Components/Header";
  
 import Sidebar from "Components/Sidebar";
 import { Card, Col, Row, Table, Button, Pagination } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Assets = () => {
   return (
@@ -38,79 +38,79 @@ const Assets = () => {
                 <tbody id="assets-ui">
                   <tr>
                     <td>
-                      <i class="bi bi-currency-bitcoin"></i> Görli Ether
+                      <i className="bi bi-currency-bitcoin"></i> Görli Ether
                     </td>
                     <td>0.01 GOR</td>
                     <td>12.7399 USD</td>
                     <td className="text-end">
                       {" "}
                       <Button variant="danger" size="sm">
-                        <i class="bi bi-arrow-up-right"></i> Pending
+                        <i className="bi bi-arrow-up-right"></i> Pending
                       </Button>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <i class="bi bi-currency-bitcoin"></i> Görli Ether
+                      <i className="bi bi-currency-bitcoin"></i> Görli Ether
                     </td>
                     <td>0.01 GOR</td>
                     <td>12.7399 USD</td>
                     <td className="text-end">
                       {" "}
                       <Button variant="success" size="sm">
-                        <i class="bi bi-arrow-down-left"></i> Recived
+                        <i className="bi bi-arrow-down-left"></i> Recived
                       </Button>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <i class="bi bi-currency-bitcoin"></i> Görli Ether
+                      <i className="bi bi-currency-bitcoin"></i> Görli Ether
                     </td>
                     <td>0.01 GOR</td>
                     <td>12.7399 USD</td>
                     <td className="text-end">
                       {" "}
                       <Button variant="danger" size="sm">
-                        <i class="bi bi-arrow-up-right"></i> Pending
+                        <i className="bi bi-arrow-up-right"></i> Pending
                       </Button>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <i class="bi bi-currency-bitcoin"></i> Görli Ether
+                      <i className="bi bi-currency-bitcoin"></i> Görli Ether
                     </td>
                     <td>0.01 GOR</td>
                     <td>12.7399 USD</td>
                     <td className="text-end">
                       {" "}
                       <Button variant="success" size="sm">
-                        <i class="bi bi-arrow-down-left"></i> Recived
+                        <i className="bi bi-arrow-down-left"></i> Recived
                       </Button>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <i class="bi bi-currency-bitcoin"></i> Görli Ether
+                      <i className="bi bi-currency-bitcoin"></i> Görli Ether
                     </td>
                     <td>0.01 GOR</td>
                     <td>12.7399 USD</td>
                     <td className="text-end">
                       {" "}
                       <Button variant="danger" size="sm">
-                        <i class="bi bi-arrow-up-right"></i> Pending
+                        <i className="bi bi-arrow-up-right"></i> Pending
                       </Button>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <i class="bi bi-currency-bitcoin"></i> Görli Ether
+                      <i className="bi bi-currency-bitcoin"></i> Görli Ether
                     </td>
                     <td>0.01 GOR</td>
                     <td>12.7399 USD</td>
                     <td className="text-end">
                       {" "}
                       <Button variant="success" size="sm">
-                        <i class="bi bi-arrow-down-left"></i> Recived
+                        <i className="bi bi-arrow-down-left"></i> Recived
                       </Button>
                     </td>
                   </tr>
