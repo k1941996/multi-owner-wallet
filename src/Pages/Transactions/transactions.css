@@ -1,0 +1,44 @@
+#assets-ui .btn-sm {
+  padding: 2px 10px;
+  font-size: 11px;
+}
+
+#tran-ui .accordion-button {
+  padding: 0px 10px !important;
+  background-color: #fff;
+  
+  transition: all .5s ease-in-out;
+  position: relative;
+  border: 0px;
+  border: 1px solid #cccccc36;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px 0 rgb(82 63 105 / 5%);
+}
+#tran-ui .dash-table {
+  margin-bottom: 0px;
+  border: 0px;
+}
+#tran-ui .dash-table tr td {
+  border: 0px;
+  vertical-align: middle;
+  padding: 14px 10px;
+  font-size: 15px;
+}
+
+#tran-ui .accordion-item{border: 0px;  transition: all .5s ease-in-out;
+  position: relative;
+  border: 0px;
+  border: 0 solid transparent;
+  border-radius: 1.75rem;
+  box-shadow: 0 5px 5px 0 rgb(82 63 105 / 5%);}
+
+  #tran-ui .accordion-button:hover{ background-color: #cccccc30 !important;
+   }
+
+  #tran-ui .dash-table tr:hover{background: none; box-shadow: none;}
+
+  .transection-ui td{font-size: 13px;}
+
+  .transection-ui td .icons a{height: auto; width: auto; background: #fff; margin-left: 10px;}
+  
+  .h-auto{min-height: inherit !important;}
